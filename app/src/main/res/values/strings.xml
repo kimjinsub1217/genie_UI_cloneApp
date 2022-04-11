@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Genie_clone</string>
+    <string name="bottom_navigation_home">홈</string>
+    <string name="bottom_navigation_forYou">For You</string>
+    <string name="bottom_navigation_search">검색</string>
+    <string name="bottom_navigation_myMusic">내음악</string>
+    <string name="bottom_navigation_Menu">전체메뉴</string>
+</resources>
