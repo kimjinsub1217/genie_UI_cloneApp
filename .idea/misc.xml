@@ -3,13 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Project/Genie_clone/app/src/main/res/drawable/rectangle.xml" value="0.175" />
         <entry key="..\:/Project/Genie_clone/app/src/main/res/drawable/selecor_menu_color.xml" value="0.1725" />
-        <entry key="..\:/Project/Genie_clone/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Project/Genie_clone/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Project/Genie_clone/app/src/main/res/layout/fragment_foryou.xml" value="0.36614583333333334" />
-        <entry key="..\:/Project/Genie_clone/app/src/main/res/layout/fragment_home.xml" value="0.36614583333333334" />
-        <entry key="..\:/Project/Genie_clone/app/src/main/res/layout/fragment_menu.xml" value="0.36614583333333334" />
+        <entry key="..\:/Project/Genie_clone/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Project/Genie_clone/app/src/main/res/layout/fragment_menu.xml" value="0.33" />
         <entry key="..\:/Project/Genie_clone/app/src/main/res/layout/fragment_mymusic.xml" value="0.36614583333333334" />
         <entry key="..\:/Project/Genie_clone/app/src/main/res/layout/fragment_search.xml" value="0.36614583333333334" />
+        <entry key="..\:/Project/Genie_clone/app/src/main/res/layout/item_top_banner_viewpager2.xml" value="0.18489583333333334" />
         <entry key="..\:/Project/Genie_clone/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.36614583333333334" />
       </map>
     </option>
@@ -19,5 +21,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2" />
+      </ProjectState>
+    </option>
   </component>
 </project>

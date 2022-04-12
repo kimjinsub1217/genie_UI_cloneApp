@@ -5,4 +5,8 @@
     <string name="bottom_navigation_search">검색</string>
     <string name="bottom_navigation_myMusic">내음악</string>
     <string name="bottom_navigation_Menu">전체메뉴</string>
+    <string name="genieLogo">지니로고</string>
+    <string name="voucher">이용권</string>
+    <string name="login">로그인</string>
+    <string name="topBannerImage">배너이미지</string>
 </resources>
