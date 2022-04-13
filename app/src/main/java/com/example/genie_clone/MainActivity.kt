@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.example.genie_clone.forYou.ForYouFragment
 import com.example.genie_clone.home.HomeFragment
+import com.example.genie_clone.home.adapters.TabLayoutViewPagerAdapter
 import com.example.genie_clone.menu.MenuFragment
 import com.example.genie_clone.myMusic.MyMusicFragment
 import com.example.genie_clone.search.SearchFragment
@@ -20,7 +21,6 @@ class MainActivity : AppCompatActivity() {
         val search = SearchFragment()
         val mymusic = MyMusicFragment()
         val menu = MenuFragment()
-
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
 
         replaceFragment(homeFragment)

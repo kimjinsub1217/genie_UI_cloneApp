@@ -31,30 +31,12 @@
                 android:layout_height="0dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHeight_default="percent"
-                app:layout_constraintHeight_percent="0.1"
+                app:layout_constraintHeight_percent="0.07"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/bannerViewPager2"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintWidth_default="percent"
                 app:layout_constraintWidth_percent="1">
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guideline1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.03"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guidelineEnd1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.97"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
                     android:layout_width="0dp"
@@ -63,8 +45,8 @@
                     android:src="@drawable/logo"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintHeight_default="percent"
-                    app:layout_constraintHeight_percent="1"
-                    app:layout_constraintStart_toEndOf="@id/guideline1"
+                    app:layout_constraintHeight_percent="0.9"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintWidth_default="percent"
                     app:layout_constraintWidth_percent="0.3" />
@@ -73,7 +55,7 @@
                     android:id="@+id/topLoginUiConstraintLayout"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    app:layout_constraintEnd_toEndOf="@id/guidelineEnd1"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHeight_default="percent"
                     app:layout_constraintHeight_percent="1"
                     app:layout_constraintTop_toTopOf="parent"
@@ -86,11 +68,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/rectangle"
-                        android:minWidth="57dp"
-                        android:minHeight="30dp"
+                        android:minWidth="50dp"
+                        android:minHeight="25dp"
                         android:text="@string/voucher"
                         android:textColor="@color/black"
-                        android:textSize="17sp"
+                        android:textSize="13sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@id/login"
@@ -116,6 +98,19 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
+            <View
+                android:id="@+id/view1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@id/bannerViewPager2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintHeight_percent="0.033"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/topLogoUiConstraintLayout"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent="1" />
+
 
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/bannerViewPager2"
@@ -126,11 +121,43 @@
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHeight_default="percent"
-                app:layout_constraintHeight_percent="0.25"
+                app:layout_constraintHeight_percent="0.40"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/topLogoUiConstraintLayout"
+                app:layout_constraintTop_toBottomOf="@id/view1"
                 app:layout_constraintWidth_default="percent"
                 app:layout_constraintWidth_percent="1" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:theme="@style/fragmentHomeTabText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintHeight_percent="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bannerViewPager2"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent="0.9"
+                app:tabGravity="fill"
+                app:tabMode="scrollable"
+                android:overScrollMode="never"
+                app:tabRippleColor="@android:color/transparent"
+                app:tabTextAppearance="@style/fragmentHomeTabText" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/homeTabLayoutViewPager2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintHeight_percent="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tabLayout"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent="0.9" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>

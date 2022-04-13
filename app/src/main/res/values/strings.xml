@@ -9,4 +9,12 @@
     <string name="voucher">이용권</string>
     <string name="login">로그인</string>
     <string name="topBannerImage">배너이미지</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="TodayMusic">오늘의 최신음악</string>
+    <string name="arrowRight">오른쪽 화살표</string>
+    <string name="TabItem1">전체</string>
+    <string name="TabItem2">국내</string>
+    <string name="TabItem3">해외</string>
+    <string name="TabItem4">좋아요</string>
 </resources>
