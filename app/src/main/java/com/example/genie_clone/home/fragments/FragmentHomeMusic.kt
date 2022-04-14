@@ -22,11 +22,6 @@ class FragmentHomeMusic : Fragment() {
 
         _binding = FragmentHomeMusicBinding.inflate(inflater, container, false)
 
-
-
-
-
-
         tabLayoutViewPage2()
         return binding.root
     }
@@ -57,6 +52,8 @@ class FragmentHomeMusic : Fragment() {
             }
         })
     }
+
+
 
 
 }

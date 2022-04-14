@@ -5,14 +5,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewpager2.widget.ViewPager2
-import com.example.genie_clone.*
+import com.example.genie_clone.R
 import com.example.genie_clone.databinding.FragmentHomeBinding
 import com.example.genie_clone.home.adapters.TabLayoutViewPagerAdapter
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
+import com.romainpiel.shimmer.Shimmer
+import com.romainpiel.shimmer.ShimmerTextView
 
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
@@ -20,17 +21,36 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     private val binding get() = _binding!!
     private lateinit var viewPagerAdapter: BannerListAdapter
     private lateinit var viewModel: FragmentHomeViewModel
+    private var tv: ShimmerTextView? = null
+    private var shimmer: Shimmer? = null
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         viewModel = ViewModelProvider(this).get(FragmentHomeViewModel::class.java)
         viewModel.setBannerItems(BannerItemList)
+        tv = binding.shimmerTitleTextView
 
+
+
+        binding.lottieViewDog.playAnimation()
+        binding.lottieViewDog.loop(true)
+
+        binding.lottieViewComputer.playAnimation()
+        binding.lottieViewComputer.loop(true)
+
+        binding.lottieViewBoy.playAnimation()
+        binding.lottieViewBoy.loop(true)
+
+
+
+        toggleAnimation()
         tabLayoutViewPage2()
         viewPage2side()
         initViewPager2()
@@ -44,18 +64,14 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             viewPagerAdapter = BannerListAdapter()
             adapter = viewPagerAdapter
             registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
-                override fun onPageSelected(position: Int) {
-                    super.onPageSelected(position)
-                }
             })
         }
-
     }
 
     private fun subscribeObservers() {
-        viewModel.bannerItemList.observe(viewLifecycleOwner, Observer { bannerItemList ->
+        viewModel.bannerItemList.observe(viewLifecycleOwner) { bannerItemList ->
             viewPagerAdapter.submitList(bannerItemList)
-        })
+        }
 
     }
 
@@ -79,10 +95,11 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         val adapter = TabLayoutViewPagerAdapter(this)
         binding.homeTabLayoutViewPager2.adapter = adapter
 
-        val tabName = arrayOf<String>("뮤직", "오디오", "TV", "DJ")
+        val tabName = arrayOf("뮤직", "오디오", "TV", "DJ")
+
 
         TabLayoutMediator(binding.tabLayout, binding.homeTabLayoutViewPager2) { tab, position ->
-            tab.text = tabName[position].toString()
+            tab.text = tabName[position]
         }.attach()
 
 
@@ -99,6 +116,16 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             }
         })
 
+
+    }
+
+    private fun toggleAnimation() {
+        if (shimmer?.isAnimating == true) {
+            shimmer?.cancel()
+        } else {
+            shimmer = Shimmer()
+            shimmer!!.start(tv)
+        }
     }
 
 }

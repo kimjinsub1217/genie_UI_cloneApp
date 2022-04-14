@@ -12,6 +12,7 @@ class FrgmentHomeTv : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+
     }
 
     override fun onCreateView(
@@ -23,3 +24,4 @@ class FrgmentHomeTv : Fragment() {
     }
 
 }
+
