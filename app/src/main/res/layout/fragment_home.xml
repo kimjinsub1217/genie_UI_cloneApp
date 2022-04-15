@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <androidx.core.widget.NestedScrollView
         android:id="@+id/NestedScrollView"
         android:layout_width="0dp"
@@ -44,14 +43,14 @@
                     android:layout_height="0dp"
                     android:text="@string/titleLogo"
                     android:textColor="#0099FF"
-                    android:textSize="34sp"
+                    android:textSize="33sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintHeight_default="percent"
                     app:layout_constraintHeight_percent="1"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintWidth_default="percent"
-                    app:layout_constraintWidth_percent="0.23" />
+                    app:layout_constraintWidth_percent="0.25" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/topLoginUiConstraintLayout"
@@ -118,11 +117,11 @@
                     android:id="@+id/lottieViewDog"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintHeight_default="percent"
                     app:layout_constraintHeight_percent="1"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintWidth_default="percent"
                     app:layout_constraintWidth_percent="0.3"
                     app:lottie_autoPlay="true"
@@ -133,12 +132,12 @@
                     android:id="@+id/lottieViewComputer"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@id/lottieViewBoy"
                     app:layout_constraintHeight_default="percent"
                     app:layout_constraintHeight_percent="1"
                     app:layout_constraintStart_toEndOf="@id/lottieViewDog"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintWidth_default="percent"
                     app:layout_constraintWidth_percent="0.3"
                     app:lottie_autoPlay="true"
@@ -149,12 +148,12 @@
                     android:id="@+id/lottieViewBoy"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHeight_default="percent"
                     app:layout_constraintHeight_percent="1"
                     app:layout_constraintStart_toEndOf="@id/lottieViewComputer"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintWidth_default="percent"
                     app:layout_constraintWidth_percent="0.3"
                     app:lottie_autoPlay="true"
@@ -173,7 +172,7 @@
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHeight_default="percent"
-                app:layout_constraintHeight_percent="0.40"
+                app:layout_constraintHeight_percent="0.25"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/LottieConstraintLayout"
                 app:layout_constraintWidth_default="percent"
@@ -183,7 +182,6 @@
                 android:id="@+id/tabLayout"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:overScrollMode="never"
                 android:theme="@style/fragmentHomeTabText"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHeight_default="percent"
@@ -193,22 +191,20 @@
                 app:layout_constraintWidth_default="percent"
                 app:layout_constraintWidth_percent="0.9"
                 app:tabGravity="fill"
-                app:tabMode="scrollable"
                 app:tabRippleColor="@android:color/transparent"
                 app:tabTextAppearance="@style/fragmentHomeTabText" />
 
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/homeTabLayoutViewPager2"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
                 android:orientation="horizontal"
+                android:nestedScrollingEnabled="true"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHeight_default="percent"
-                app:layout_constraintHeight_percent="1"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tabLayout"
-                app:layout_constraintWidth_default="percent"
-                app:layout_constraintWidth_percent="0.9" />
+                app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+
+
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

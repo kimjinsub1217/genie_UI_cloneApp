@@ -1,4 +1,4 @@
-package com.example.genie_clone.home
+package com.example.genie_clone.home.adapters
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.genie_clone.R
+import com.example.genie_clone.home.BannerItem
 
 
 class BannerListAdapter: ListAdapter<BannerItem, BannerListAdapter.ItemViewHolder>(differ) {

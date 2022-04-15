@@ -9,6 +9,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.viewpager2.widget.ViewPager2
 import com.example.genie_clone.R
 import com.example.genie_clone.databinding.FragmentHomeBinding
+import com.example.genie_clone.home.adapters.BannerListAdapter
 import com.example.genie_clone.home.adapters.TabLayoutViewPagerAdapter
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
@@ -25,7 +26,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     private var shimmer: Shimmer? = null
 
 
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -37,18 +37,11 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         viewModel.setBannerItems(BannerItemList)
         tv = binding.shimmerTitleTextView
 
-
-
         binding.lottieViewDog.playAnimation()
-        binding.lottieViewDog.loop(true)
 
         binding.lottieViewComputer.playAnimation()
-        binding.lottieViewComputer.loop(true)
 
         binding.lottieViewBoy.playAnimation()
-        binding.lottieViewBoy.loop(true)
-
-
 
         toggleAnimation()
         tabLayoutViewPage2()
