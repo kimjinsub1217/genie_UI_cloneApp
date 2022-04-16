@@ -30,7 +30,7 @@
                 android:layout_height="0dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHeight_default="percent"
-                app:layout_constraintHeight_percent="0.08"
+                app:layout_constraintHeight_percent="0.02"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/bannerViewPager2"
                 app:layout_constraintTop_toTopOf="parent"
@@ -106,7 +106,7 @@
                 app:layout_constraintBottom_toTopOf="@id/bannerViewPager2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHeight_default="percent"
-                app:layout_constraintHeight_percent="0.1"
+                app:layout_constraintHeight_percent="0.04"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/topLogoUiConstraintLayout"
                 app:layout_constraintWidth_default="percent"
@@ -172,39 +172,262 @@
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHeight_default="percent"
-                app:layout_constraintHeight_percent="0.25"
+                app:layout_constraintHeight_percent="0.08"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/LottieConstraintLayout"
                 app:layout_constraintWidth_default="percent"
                 app:layout_constraintWidth_percent="1" />
 
+
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tabLayout"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
+                android:overScrollMode="never"
                 android:theme="@style/fragmentHomeTabText"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHeight_default="percent"
-                app:layout_constraintHeight_percent="0.1"
+                app:layout_constraintHeight_percent="0.03"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/bannerViewPager2"
                 app:layout_constraintWidth_default="percent"
-                app:layout_constraintWidth_percent="0.9"
+                app:layout_constraintWidth_percent="1"
                 app:tabGravity="fill"
+                app:tabMode="scrollable"
                 app:tabRippleColor="@android:color/transparent"
                 app:tabTextAppearance="@style/fragmentHomeTabText" />
 
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/homeTabLayoutViewPager2"
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
-                android:orientation="horizontal"
+                android:layout_height="250dp"
                 android:nestedScrollingEnabled="true"
+                android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tabLayout" />
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/genieChartConstraint"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintHeight_percent="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/homeTabLayoutViewPager2"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent="1">
 
+                <TextView
+                    android:id="@+id/genieChart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/genieChart"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/arrowRight"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:contentDescription="@string/arrowRight"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHeight_default="percent"
+                    app:layout_constraintHeight_percent="0.4"
+                    app:layout_constraintStart_toEndOf="@id/genieChart"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_default="percent"
+                    app:layout_constraintWidth_percent="0.1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/chartImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/genieChartImage"
+                android:src="@drawable/chart"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/genieChartConstraint" />
+
+            <View
+                android:id="@+id/viewLine2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintHeight_percent="0.03"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/chartImageView"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent="1" />
+
+            <ImageView
+                android:id="@+id/bannerImageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/banner"
+                android:contentDescription="@string/bannerImage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewLine2" />
+
+            <View
+                android:id="@+id/viewLine3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintHeight_percent="0.03"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bannerImageView2"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent="1" />
+
+            <TextView
+                android:id="@+id/TopTenTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/topTenTextView"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewLine3" />
+
+            <View
+                android:id="@+id/viewLine4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintHeight_percent="0.01"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TopTenTextView"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent="1" />
+
+            <ImageView
+                android:id="@+id/toptenImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/genieChartImage"
+                android:src="@drawable/topten"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewLine4" />
+
+            <View
+                android:id="@+id/viewLine5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintHeight_percent="0.01"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/toptenImageView"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent="1" />
+
+            <TextView
+                android:id="@+id/todaySong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/TodaySong"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewLine5" />
+
+            <View
+                android:id="@+id/viewLine6"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintHeight_percent="0.01"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/todaySong"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent="1" />
+
+            <ImageView
+                android:id="@+id/todaySongImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/genieChartImage"
+                android:src="@drawable/todaysong"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewLine6" />
+
+            <View
+                android:id="@+id/viewLine7"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintHeight_percent="0.01"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/todaySongImageView"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent="1" />
+
+            <TextView
+                android:id="@+id/genreSong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/genreSong"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewLine7" />
+
+            <View
+                android:id="@+id/viewLine8"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintHeight_percent="0.01"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/genreSong"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent="1" />
+
+            <ImageView
+                android:id="@+id/genreSongImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/genieChartImage"
+                android:src="@drawable/genrssong"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewLine8" />
+
+            <View
+                android:id="@+id/viewLine9"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintHeight_percent="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/genreSongImageView"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent="1" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,17 +7,21 @@
         <entry key="..\:/Project/Genie_clone/app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.2485" />
         <entry key="..\:/Project/Genie_clone/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2485" />
         <entry key="..\:/Project/Genie_clone/app/src/main/res/drawable/ic_baseline_keyboard_arrow_right_24.xml" value="0.2485" />
+        <entry key="..\:/Project/Genie_clone/app/src/main/res/drawable/ic_baseline_keyboard_double_arrow_left_24.xml" value="0.163" />
+        <entry key="..\:/Project/Genie_clone/app/src/main/res/drawable/ic_baseline_playlist_play_24.xml" value="0.163" />
         <entry key="..\:/Project/Genie_clone/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.2485" />
         <entry key="..\:/Project/Genie_clone/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2485" />
         <entry key="..\:/Project/Genie_clone/app/src/main/res/drawable/rectangle.xml" value="0.175" />
+        <entry key="..\:/Project/Genie_clone/app/src/main/res/drawable/rectangle_all_corner_radius.xml" value="0.17" />
         <entry key="..\:/Project/Genie_clone/app/src/main/res/drawable/selecor_menu_color.xml" value="0.1725" />
         <entry key="..\:/Project/Genie_clone/app/src/main/res/drawable/selector_menu_color.xml" value="0.1" />
+        <entry key="..\:/Project/Genie_clone/app/src/main/res/drawable/splash.xml" value="0.163" />
         <entry key="..\:/Project/Genie_clone/app/src/main/res/layout/activity_item_banner_viewpage2.xml" value="0.1" />
-        <entry key="..\:/Project/Genie_clone/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Project/Genie_clone/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Project/Genie_clone/app/src/main/res/layout/fragment_all.xml" value="0.36614583333333334" />
         <entry key="..\:/Project/Genie_clone/app/src/main/res/layout/fragment_first.xml" value="0.16145833333333334" />
         <entry key="..\:/Project/Genie_clone/app/src/main/res/layout/fragment_foryou.xml" value="0.36614583333333334" />
-        <entry key="..\:/Project/Genie_clone/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Project/Genie_clone/app/src/main/res/layout/fragment_home.xml" value="0.18424479166666666" />
         <entry key="..\:/Project/Genie_clone/app/src/main/res/layout/fragment_home_audio.xml" value="0.3619791666666667" />
         <entry key="..\:/Project/Genie_clone/app/src/main/res/layout/fragment_home_dj.xml" value="0.3619791666666667" />
         <entry key="..\:/Project/Genie_clone/app/src/main/res/layout/fragment_home_music.xml" value="0.22" />

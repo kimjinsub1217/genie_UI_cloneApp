@@ -9,7 +9,7 @@
     <string name="voucher">이용권</string>
     <string name="login">로그인</string>
     <string name="topBannerImage">배너이미지</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="TodayMusic">오늘의 최신음악</string>
     <string name="arrowRight">오른쪽 화살표</string>
@@ -21,4 +21,13 @@
     <string name="albumPicture">앨범사진</string>
     <string name="AllTabImageView">모든 탭 이미지뷰</string>
     <string name="genieChart">트랜디한 지니차트</string>
+    <string name="genieChartImage">지니차트이미지</string>
+    <string name="bannerImage">배너이미지</string>
+    <string name="topTenTextView">오늘의 인기 TOP 10</string>
+    <string name="TodaySong"><![CDATA[오늘의 선곡]]></string>
+    <string name="genreSong">장르별 음악</string>
+    <string name="titleSong">봄여름가을겨울 (Still Life)</string>
+    <string name="artist">BIGBANG(빅뱅)</string>
+    <string name="playListBackButton">플레이리스트 뒤로가기 버튼</string>
+    <string name="playListPlayButton">플레이리스트 재생 버튼</string>
 </resources>
