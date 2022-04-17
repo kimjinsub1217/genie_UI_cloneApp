@@ -30,4 +30,5 @@
     <string name="artist">BIGBANG(빅뱅)</string>
     <string name="playListBackButton">플레이리스트 뒤로가기 버튼</string>
     <string name="playListPlayButton">플레이리스트 재생 버튼</string>
+    <string name="splashImageView">스플래쉬 화면 이미지뷰</string>
 </resources>
